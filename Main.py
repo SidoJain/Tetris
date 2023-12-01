@@ -227,7 +227,7 @@ def draw_next_shape(shape, surface, score = 0):
 
 def update_score(nscore):
     score = max_score()
-    with open("C:/Users/sidoj/Desktop/Sido/Python/Projects/Tetris/Scores.txt", "w") as f:
+    with open("Scores.txt", "w") as f:
         if int(score) > nscore:
             f.write(str(score))
         else:
